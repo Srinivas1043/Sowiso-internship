@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+   <div class="container container-fluid" style="padding-bottom: 20px">
+    <h1 style="text-align: center"> Sowiso Internship Exercise </h1>
+</div>
+<div style="text-align: center" >
+    <p> Select your age group (years) : </p>
+    <div class="input-group mb-3">
+<select id="ageSelect" class="form-select" onchange="SubmitAge()">
+    <option value="default"> Select Age... </option>
+    <option value="lessthan5"> Less than 5 </option>
+    <option value="5to10"> 5 to 10 </option>
+    <option value="10to15"> 10 to 15 </option>
+    <option value="greaterthan15"> Greater than 15 </option>
+</select>
+    
+    </div>
+</div>    
+      <br>
+    <br>
+    
+    <div id="addmain" style="display:None;  text-align: center">  
+
+    <span id="parenthesis" style="display:None;font-size: 30px">(</span>  
+    <span id="addition" style="font-size: 30px" ></span> 
+    <span id="parenthesis0" style="display:None; font-size: 30px">)</span>  
+    <span style="font-size: 30px"> + </span>
+    <span id="parenthesis1" style="display:None;font-size: 30px" >(</span>
+    <span id="addition1" style="font-size: 30px"></span>
+    <span id="parenthesis01" style="display:None; font-size: 30px">)</span> 
+    <span style="font-size: 30px">  = </span>
+    </div>
+
+        
+    <div id="answer" style="display:None; text-align: center">
+         
+        <input class="form-control" type="number" id="result_total" placeholder="Type Your Answer here ">
+        <br>
+        <button class="btn btn-primary" onclick="ValidateCorrectAnswer()">Submit Answer</button>
+        <button class="btn btn-success" onclick="NextQuestion()">Next Question</button>
+    </div>
+
+    <div id="ansgroup" style="text-align: center; padding-top : 30px">
+    <p id="correct" style="display:None"> Awesome, you are <span style="color: green"> <b> Correct! </b> </span> </p> 
+    <p id="wrong" style="display: None"> Oops! You are <span style="color: red"> <b> Wrong! </b> </span>, You can still learn from your mistakes. The Right answer is <span style="color: green"> <b id="correct_answer">  </b> </span> <br> 
+    For more you can visit <b><a href="https://sowiso.nl/en/courses/"> Sowiso Courses </a></b>to practice and upgrade your skills. 
+    
+    
+    </p> 
+    </div>
+    <script src="main.js" async defer></script>
+    </body>
+</html>
